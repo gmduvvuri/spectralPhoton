@@ -151,7 +151,7 @@ def rebin(np.ndarray[DBL_t] nb, np.ndarray[DBL_t] ob, ov, method):
         return rebin_float(nb, ob, ov.astype('f8'), method, n)
     elif type(ov.item(0)) is int:
         return rebin_int(nb, ob, ov.astype('i4'), method, n)
-    elif type(ov.item(0)) is long:
+    else:
         return rebin_long(nb, ob, ov.astype('i8'), method, n)
 
 
