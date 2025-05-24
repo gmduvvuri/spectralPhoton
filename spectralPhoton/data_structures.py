@@ -13,7 +13,7 @@ from astropy import (
     table as _table,
 )
 from astropy.io import fits as _fits
-import rebin as _rebin
+import spectralPhoton.rebin as _rebin
 from matplotlib import pyplot as plt, pyplot as _pl
 from functools import reduce
 
