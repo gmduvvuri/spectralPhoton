@@ -676,6 +676,8 @@ def _get_Aeff_compare(photons, bin_edges, flux, error=None, order='all', rebin=2
         use_edges = rebin if user_bin else bin_edges
         if order == 'all':
             _order = None
+        else:
+            _order = order
         cps_density, cps_error = photons.spectrum(use_edges, order=_order)[2:4]
     else:
         if adaptive_bin:
